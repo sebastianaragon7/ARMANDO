@@ -1,0 +1,234 @@
+/*reset page*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*division de areas*/
+.header{
+    grid-area: header;
+    background-color: rgb(255, 187, 0);
+}
+.nav{
+    background-color: brown;
+    grid-area: nav;
+}
+.principal{
+    background-color: yellow;
+    border-radius: 3%;
+    grid-area: principal;
+}
+.aside{
+    background-color: goldenrod;
+    grid-area: aside;
+}
+.footer{
+    background-color: darkseagreen;
+    grid-area: footer;
+}
+
+/*grid*/
+.grid{
+    height: 100vh;
+    margin: 0%;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 4fr 12fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "nav principal principal"
+    "footer footer footer";
+}
+
+/*media queris*/
+@media screen and (max-width:768px){
+    .grid{
+        height: 100vh;
+        margin: 0%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+        "header"
+        "nav"
+        "principal"
+        "footer";
+    }
+    
+}
+
+/*estilo header*/
+.cabecera{
+    display: flex;
+    justify-content: center;
+}
+.logotipo{
+    width: 140px;
+    height: 140px;
+}
+h1{
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    margin: 20px;
+    padding: 20px;
+}
+
+/*barra de navegación*/
+.nav{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lobster', cursive;
+    list-style: none;
+    font-size: 30px;
+}
+li{
+    padding: 60px;
+    margin: 20px;
+}
+a{
+    margin: 10px;
+    font-size: 35px;
+    text-decoration: none;
+    color: black;
+}
+li:hover a{
+    color: white;
+}
+
+/*css para el section*/
+.principal{
+    background-color: aliceblue;
+}
+.foto1{
+    width: 100%;
+    height: 650px;
+    border-radius: 2%;
+}
+.foto2{
+    width: 300px;
+    height: 250px;
+    margin: 20px;
+    border-radius: 2%;
+}
+.historia{ 
+    font-family: 'Lobster', cursive;
+    width: 30%;
+    margin: 30px;
+    padding: 40px;
+    border-radius: 100%;
+    background-color: rgb(240, 131, 8);
+}
+
+/*estilo para el footer*/
+footer{
+    background-color: rgba(236, 162, 22, 0.877);
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+.redes{
+    font-size: 50px;
+}
+a{
+    margin: 10px;
+    font-size: 35px;
+    text-decoration: none;
+    color: black;
+}
+li:hover a{
+    color: white;
+}
+h2{
+    padding: 10px;
+}
+.finalUno{
+    background-color: yellow;
+}
+.finalDos{
+    background-color: red;
+}
+
+/*pagina historia*/
+
+#historia{
+    background-color: rgb(240, 217, 8, 0.945);
+}
+header{
+    background-color: rgb(240, 131, 8);
+}
+article{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+h2{
+    font-family:'Lobster', cursive;
+    font-size: 40px;
+}
+
+/*css para pag. productos*/
+.fotoMedialuna{
+    width: 300px;
+    height: 250px;
+    margin: 20px;
+    border-radius: 2%;
+}
+
+/*css para pag. rrhh*/
+
+.panaderos{
+    width: 100%;
+    height: 50%;
+    margin: 20px;
+    border-radius: 2%;
+}
+.form{
+    width: 400px;
+    background-color: yellow;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border-radius: 3%;
+    margin: 2px;
+    border: 2px solid black;
+}
+
+/*css para pagina contacto*/
+
+p{
+    text-align: center;
+    margin: 40px;
+    padding: 40px;
+    font-family: 'Lobster', cursive;
+}
+.formulario{
+    background-color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    border:  2px solid black;
+    margin: 2px;
+    padding: 50px;
+    border-radius: 3%;
+}
+.casilla{
+    border: 3px solid black;
+}
+.cliente{
+    width: 100%;
+    height: 50%;
+    margin: 20px;
+    border-radius: 2%;
+}
+
+/*css para pagina sucursales*/
+.sucursales{
+    list-style-type: none;
+    margin: 10px;
+    padding: 5px;
+}
+.local1{
+    width: 70%;
+    border-radius: 3%;
+}
+.local2{
+    width: 70%;
+    border-radius: 3%;
+}
