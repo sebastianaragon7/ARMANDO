@@ -81,6 +81,10 @@ h1{
     font-family: 'Lobster', cursive;
     list-style: none;
     font-size: 30px;
+    transition: background-color, width 2s;
+}
+.nav:hover{
+    background-color: white;
 }
 li{
     padding: 60px;
@@ -93,7 +97,7 @@ a{
     color: black;
 }
 li:hover a{
-    color: white;
+    color: brown;
 }
 
 /*css para el section*/
@@ -136,7 +140,7 @@ a{
     color: black;
 }
 li:hover a{
-    color: white;
+    color: brown;
 }
 h2{
     padding: 10px;
@@ -146,6 +150,9 @@ h2{
 }
 .finalDos{
     background-color: red;
+}
+.redes:hover{
+    transform: scale(2);
 }
 
 /*pagina historia*/
